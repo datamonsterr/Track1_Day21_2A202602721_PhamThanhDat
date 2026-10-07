@@ -63,33 +63,33 @@ Mức độ can thiệp bắt buộc tương ứng trực tiếp với các cấ
 
 Đòi hỏi kiểm thử nghiêm ngặt có sự tham gia của con người, chạy các bộ kịch bản mô phỏng hồi quy liên tục, kiểm toán an toàn tính năng theo tiêu chuẩn SOTIF (Safety of the Intended Functionality), và duy trì hội đồng điều tra sự cố độc lập.
 
-### 2. Case study 1 — [Tên case]
+### 2. Case study 1 — Uber ATG: va chạm chết người tại Tempe, Arizona (2018)
 
 #### Brief Case
 
-- Tổ chức / sản phẩm AI: [Điền]
-- Thời gian, địa điểm / bối cảnh: [Điền]
-- AI được dùng để làm gì: [Điền]
-- Vấn đề hoặc sự kiện đáng chú ý: [Điền sự kiện có nguồn]
-- Số liệu có nguồn: [Con số, đơn vị, thời gian/phạm vi đo và nguồn nào cung cấp]
-- Nguồn: [Tên tài liệu/bài viết — đơn vị/tác giả — ngày công bố — URL — trang/mục liên quan nếu có]
-- Phân biệt bằng chứng và nhận định: [Điều nguồn xác nhận; điều tôi suy luận hoặc còn chưa rõ]
+- Tổ chức / sản phẩm AI: Uber Advanced Technologies Group (ATG); hệ thống lái tự động thử nghiệm (ADS) trên Volvo XC90 đời 2017.
+- Thời gian, địa điểm / bối cảnh: 21:58 ngày 18/03/2018, N. Mill Avenue, Tempe, Arizona, Mỹ; thử nghiệm trên đường công cộng với một người vận hành trên xe.
+- AI được dùng để làm gì: Nhận biết vật thể, dự đoán quỹ đạo và điều khiển xe trên tuyến thử nghiệm đã lập bản đồ.
+- Vấn đề hoặc sự kiện đáng chú ý: Xe đâm một người đi bộ đang dắt xe đạp qua đường ngoài vạch sang đường. ADS phân loại và dự đoán sai, không phanh khẩn cấp để giảm mức độ va chạm; người vận hành mất tập trung vì điện thoại và tiếp quản quá muộn.
+- Số liệu có nguồn: **1 người tử vong**; ADS phát hiện vật thể **5,6 giây** trước va chạm nhưng chỉ xác định tình huống khẩn cấp **1,2 giây** trước va chạm; hệ thống trì hoãn phanh **1 giây**; tốc độ lúc va chạm **39 mph**. Đây là số liệu của vụ Tempe, không phải tỷ lệ lỗi toàn đội xe (NTSB, tr. 1–2, 5, 13–17).
+- Nguồn: *Collision Between Vehicle Controlled by Developmental Automated Driving System and Pedestrian, Tempe, Arizona, March 18, 2018* — NTSB, báo cáo **NTSB/HAR-19/03**, thông qua ngày **19/11/2019**, bản sửa ngày **26/06/2020** — [PDF chính thức](https://www.ntsb.gov/investigations/AccidentReports/Reports/HAR1903.pdf); mục 1.1, 1.3, 1.5.5–1.5.6, 1.6.3 và 3.1–3.2. [PDF lưu trong repo](cases/01-uber-tempe-2018/har1903.pdf) · [Phân tích chi tiết](cases/01-uber-tempe-2018/analysis.md).
+- Phân biệt bằng chứng và nhận định: NTSB xác nhận hậu quả và các lỗi kỹ thuật, giám sát; nguyên nhân có khả năng nhất là người vận hành không giám sát vì mất tập trung. Các nhãn layer, failure mode và Severity dưới đây là cách tôi quy chiếu sang worksheet; không phải phân loại của NTSB.
 
 #### Harm Map Worksheet
 
 | Trường | Phân tích của tôi |
 | --- | --- |
-| High-risk moment | [Tình huống cụ thể có rủi ro] |
-| Stakeholder bị ảnh hưởng | [Người dùng và các bên liên quan] |
-| Failure mode | [Kiểu lỗi AI; chọn mục giải thích được: Hallucination / Bias / fairness / Sycophancy / Over-reliance / Harmful advice / Privacy leak / Escalation failure / Misuse / jailbreak] |
-| Layer bắt đầu lỗi | [UX / Grounding / Safety / Model; giải thích hoặc ghi chưa đủ bằng chứng] |
-| Harm xảy ra là gì? | [Ai bị ảnh hưởng + hậu quả; ghi rõ đã xảy ra hay mới là nguy cơ] |
-| Harm lens | [Chọn loại phù hợp: misinformation / opportunity loss / injury / privacy loss / dignity loss] |
-| Severity | [Low / Medium / High / Critical; giải thích bằng hậu quả] |
-| Scale | [Quy mô tác động và căn cứ; nêu phạm vi hoặc số người có nguồn, hoặc ghi chưa đủ dữ liệu] |
-| Probability | [Khả năng xảy ra và căn cứ; tỷ lệ đo được nếu có, hoặc nhận định định tính có giải thích] |
-| Frequency | [Tần suất và căn cứ; số liệu có nguồn hoặc nhận định định tính có giải thích] |
-| Vì sao? | [Lý do cho các đánh giá; nguồn hoặc giới hạn bằng chứng] |
+| High-risk moment | Người đi bộ dắt xe đạp cắt ngang đường xe thử nghiệm; ADS nhận ra tình huống khẩn cấp chỉ 1,2 giây trước va chạm. |
+| Stakeholder bị ảnh hưởng | Người đi bộ là nạn nhân trực tiếp; người vận hành, gia đình nạn nhân, Uber ATG và cơ quan quản lý là các bên liên quan. |
+| Failure mode | Escalation failure: phương án dự phòng dựa vào người vận hành không ngăn được va chạm; Over-reliance: automation complacency góp phần làm giám sát suy giảm. Lỗi kỹ thuật đi kèm là phân loại vật thể và dự đoán quỹ đạo sai. |
+| Layer bắt đầu lỗi | Model, theo chức năng perception/prediction; Safety không bù được lỗi: trì hoãn phanh và vô hiệu hóa FCW/AEB của Volvo. Chưa đủ bằng chứng để quy nguyên nhân cho riêng trọng số mô hình hay dữ liệu huấn luyện. |
+| Harm xảy ra là gì? | **Đã xảy ra:** một người đi bộ tử vong do va chạm; người vận hành không bị thương. |
+| Harm lens | Injury — tổn hại thể chất dẫn đến tử vong. |
+| Severity | **Critical** — nhận định của tôi vì hậu quả là mất tính mạng. |
+| Scale | **1 người tử vong trong 1 vụ va chạm**; chưa có căn cứ để ngoại suy số người chịu cùng lỗi trên toàn đội xe. |
+| Probability | Chưa đủ dữ liệu để ước lượng xác suất tái diễn; một sự kiện đã xảy ra không xác lập tỷ lệ lỗi của hệ thống. |
+| Frequency | Ghi nhận 1 vụ Tempe ngày 18/03/2018 trong case này; chưa đủ dữ liệu để xác định tần suất của cùng chuỗi lỗi. |
+| Vì sao? | NTSB tr. 1–2, 5, 13–17, 22, 57–59 xác nhận hậu quả, lỗi dự đoán, thiếu dự phòng phanh và mất tập trung. Báo cáo không cung cấp mẫu số phơi nhiễm phù hợp để tính Probability/Frequency. |
 
 ### 3. Case study 2 — [Tên case]
 
