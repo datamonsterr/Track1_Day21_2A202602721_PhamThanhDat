@@ -3,7 +3,7 @@
 - Họ và tên: Phạm Thanh Đạt
 - MSSV / mã học viên: 2A202602721
 - Lớp: [Điền lớp]
-- Ngành đã chọn: [Chọn một ngành theo đề]
+- Ngành đã chọn: Mobility / autonomous driving — Phương tiện Di chuyển & Xe tự hành (AV)
 
 > Đây là khung báo cáo cá nhân. Thay các nội dung trong ngoặc vuông bằng bài làm của mình trước khi nộp.
 >
@@ -13,12 +13,55 @@
 
 ### 1. Industry Risk Snapshot
 
-| Nội dung | Đánh giá của tôi và lý do |
-| --- | --- |
-| Những tác hại chính có thể xảy ra | [Điền tác hại và người bị ảnh hưởng] |
-| Mức độ high-stakes | [Thấp / Trung bình / Cao; giải thích] |
-| Dữ liệu nhạy cảm có thể được sử dụng | [Nêu loại dữ liệu, không đưa dữ liệu thật vào bài] |
-| Nhu cầu human review | [Thấp / Trung bình / Cao; ai kiểm tra, ở bước nào, vì sao] |
+#### Tổng quan Rủi ro Ngành: Phương tiện Di chuyển & Xe tự hành (AV)
+
+Ngành di chuyển tự hành vận hành trong một môi trường rủi ro đặc biệt nghiêm trọng và bị kiểm soát chặt chẽ, nơi an toàn vật lý, an ninh mạng và bảo vệ dữ liệu đan xen trực tiếp với nhau. Bất kỳ sai sót nào trong quá trình xử lý kỹ thuật số đều có thể chuyển hóa tức thì thành thiệt hại vật lý hoặc đe dọa trực tiếp tính mạng con người.
+
+| Khía cạnh Đánh giá | Mức độ | Yếu tố Thúc đẩy Chính & Lỗ hổng Trọng yếu |
+| --- | --- | --- |
+| Khả năng gây hại (Harmfulness Potential) | Nghiêm trọng / Cao (Critical / High) | Tổn hại vật lý do va chạm (tai nạn, tử vong), gián đoạn hạ tầng đô thị (chặn tuyến đường xe khẩn cấp), rủi ro an ninh mạng mang tính hệ thống trên toàn bộ đoàn xe (fleet). |
+| Mức độ high-stakes | Cao (High) | Sai sót kỹ thuật số có thể chuyển hóa thành thiệt hại vật lý hoặc đe dọa trực tiếp tính mạng con người. |
+| Nguy cơ lộ lọt dữ liệu nhạy cảm (Sensitive Data Exposure) | Cao (High) | Ghi hình liên tục tại không gian công cộng, thu thập dữ liệu sinh trắc học kéo dài trong khoang lái/khoang khách, theo dõi quỹ đạo di chuyển thời gian thực với độ chính xác cao. |
+| Mức độ can thiệp của con người (Human Action Needed) | Cao đến Khá cao (High to Medium-High) | Quy trình giành quyền kiểm soát tức thì (SAE L2–L3), điều hành/can thiệp từ xa đối với đoàn xe (L4), và vai trò giám sát của tài xế an toàn. |
+| Áp lực Pháp lý & Tuân thủ (Regulatory Pressure) | Rất cao (Very High) | Các tiêu chuẩn an toàn nghiêm ngặt (ISO 26262, ISO 21448/SOTIF, UNECE WP.29 R155/R156) và khung pháp lý bảo vệ quyền riêng tư (EU AI Act, GDPR, CCPA). |
+
+#### Phân tích Chi tiết các Chiều Rủi ro Trọng yếu
+
+##### 1. Khả năng gây hại: Nghiêm trọng / Cao
+
+- **Tác động vật lý & động năng:** Hiện tượng cảm biến bị "mù" (do sương mù dày đặc, mưa lớn, ánh sáng chói), nhận diện sai ở tầng thị giác/cảm nhận (bỏ sót người đi bộ hoặc người đi xe đạp), và lỗi lập kế hoạch quỹ đạo (planning failures) đều trực tiếp gây ra nguy cơ va chạm thảm khốc và thương vong.
+- **Mối đe dọa an ninh mạng – vật lý mang tính hệ thống:** Khác với hạ tầng CNTT thông thường, các véc-tơ tấn công trên phương tiện (cập nhật OTA, giao tiếp mạng V2X, xâm nhập CAN bus) có thể cho phép kẻ tấn công chiếm quyền điều khiển hệ thống phanh, đánh lái hoặc chân ga từ xa trên quy mô toàn đoàn xe.
+- **Tê liệt hạ tầng và cản trở lực lượng khẩn cấp:** Sự cố "phanh ma" (phantom braking) hoặc xe bị chết máy/dừng khẩn cấp giữa giao lộ có thể gây ùn tắc giao thông cục bộ và chặn đường di chuyển của xe cứu hỏa hay cứu thương.
+
+##### 2. Nguy cơ lộ lọt dữ liệu nhạy cảm: Cao
+
+- **Dữ liệu viễn trắc môi trường ngoại cảnh:** Hệ thống cảm biến (LiDAR, camera độ phân giải cao, sóng siêu âm) liên tục ghi lại khuôn mặt người qua đường, biển số xe, nhà riêng và các khu vực trọng yếu/quân sự mà không có sự chấp thuận rõ ràng từ chủ thể.
+- **Giám sát khoang lái & dữ liệu sinh trắc học:** Hệ thống giám sát người lái (DMS) dùng camera cabin và cảm biến hồng ngoại để theo dõi hướng nhìn, tần suất chớp mắt, đặc điểm nhận diện khuôn mặt và trạng thái sinh lý (mệt mỏi, mất tập trung).
+- **Định danh hành vi & không gian địa lý:** Tọa độ GPS độ chính xác cao cùng nhật ký lộ trình dễ dàng bộc lộ các thói quen cá nhân nhạy cảm, địa chỉ nhà ở/cơ quan, các điểm đến y tế hay khuynh hướng tôn giáo, chính trị.
+- **Chủ quyền dữ liệu:** Việc truyền tải dữ liệu bản đồ độ nét cao (HD Map) và nhật ký hình ảnh xuyên biên giới hiện chịu sự kiểm soát an ninh quốc gia đặc biệt gắt gao tại nhiều thị trường lớn (Mỹ, EU, Trung Quốc).
+
+##### 3. Mức độ cần sự can thiệp của con người: Cao đến Khá cao
+
+Mức độ can thiệp bắt buộc tương ứng trực tiếp với các cấp độ tự hành (theo tiêu chuẩn SAE J3016):
+
+**SAE Cấp độ 2 / 2+ (Bán tự động - Tay lái / Mắt nhìn liên tục):**
+
+- Mức độ con người: Liên tục / Trực tiếp tham gia vận hành (In-the-Loop).
+- Người lái giữ toàn bộ trách nhiệm pháp lý và vận hành, đòi hỏi khả năng can thiệp trong tích tắc để xử lý các tình huống biên ngoại lệ (edge cases).
+
+**SAE Cấp độ 3 (Tự động hóa có điều kiện):**
+
+- Mức độ con người: Cao / Giám sát sẵn sàng tiếp quản (On-the-Loop).
+- Người lái không cần điều khiển trực tiếp nhưng phải luôn sẵn sàng nhận lại quyền kiểm soát trong khoảng thời gian cửa sổ chuyển giao giới hạn (thường từ 5–10 giây) khi xe vượt ra khỏi phạm vi thiết kế vận hành (ODD).
+
+**SAE Cấp độ 4 (Tự động hóa cao - Robotaxi / Đội xe tự hành):**
+
+- Mức độ con người: Từ xa / Không trực tiếp trong khoang lái (Out-of-the-Loop), nhưng cần can thiệp cao ở tầng trung tâm điều hành.
+- Phương tiện không cần tài xế trên xe, song trung tâm điều hành tập trung vẫn cần đội ngũ kỹ thuật viên can thiệp xử lý từ xa các tình huống bế tắc, phê duyệt lộ trình dự phòng, hoặc tiếp quản thủ công khi xe thực hiện thao tác giảm thiểu rủi ro (MRM) và dừng lại an toàn.
+
+**Giám sát ở cấp độ Kỹ thuật & Hệ thống:**
+
+Đòi hỏi kiểm thử nghiêm ngặt có sự tham gia của con người, chạy các bộ kịch bản mô phỏng hồi quy liên tục, kiểm toán an toàn tính năng theo tiêu chuẩn SOTIF (Safety of the Intended Functionality), và duy trì hội đồng điều tra sự cố độc lập.
 
 ### 2. Case study 1 — [Tên case]
 
