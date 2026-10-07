@@ -1,0 +1,124 @@
+# Case 2 — Yeh v. Tesla, Inc.: quyền riêng tư trong chuỗi dữ liệu AI (2023)
+
+[Báo cáo tóm tắt](../../README.md) · [Danh mục nguồn và PDF](sources/README.md) · [Hồ sơ các case](../README.md)
+
+## 1. Phạm vi và trạng thái bằng chứng
+
+Tên hồ sơ chính xác là **Yeh v. Tesla, Inc., 3:23-cv-01704-JCS**. Nguyên đơn ban đầu là **Henry Yeh**, không phải một nguyên đơn có họ Henry. Đơn gốc nộp ngày **07/04/2023** tại Tòa án Liên bang Khu vực Bắc California. [C1, bìa và ¶ 9](sources/complaint-2023-04-07.pdf#page=1); [C2, tr. 1–2](sources/court-order-2023-10-12.pdf#page=1).
+
+Case tập trung vào **rủi ro quyền riêng tư khi phát triển AI hỗ trợ lái**: dữ liệu camera được con người truy cập để gán nhãn nhưng có thể bị dùng ngoài mục đích đó. Nó cùng ngành Mobility / autonomous driving với vụ Uber Tempe, nhưng nằm ở chuỗi dữ liệu và quản trị, không phải ở một quyết định điều khiển xe được chứng minh là sai.
+
+| Trạng thái | Cách dùng trong phân tích |
+| --- | --- |
+| Sự kiện tố tụng có hồ sơ | Đơn gốc tồn tại; ngày 12/10/2023 tòa yêu cầu trọng tài đối với yêu cầu của Yeh và người con được thêm vào vụ kiện, tạm dừng vụ án và chỉ đạo đóng hồ sơ hành chính. |
+| Tường thuật báo chí | Reuters ghi lời kể cựu nhân viên về truy cập/chia sẻ ảnh, video và vị trí; không lấy được các file đã chia sẻ. |
+| Cáo buộc của nguyên đơn | Đơn kiện cho rằng Tesla cho phép sử dụng dữ liệu sai mục đích, xâm phạm quyền riêng tư và cần bồi thường/khắc phục. Chưa được lệnh trọng tài xét xử đúng/sai về nội dung. |
+| Nhận định của tôi | Nhãn Privacy leak, Misuse, Safety, High và các đề xuất kiểm soát; đây là cách quy chiếu sang worksheet, không phải ngôn ngữ kết luận của tòa. |
+
+## 2. Brief Case và quan hệ với AI
+
+**Tổ chức / sản phẩm:** Tesla, camera trên xe và quy trình xử lý ảnh/video phục vụ phát triển Autopilot. Hồ sơ gốc mô tả Autopilot là hệ thống hỗ trợ người lái; không dựa vào tên thương mại để kết luận xe là phương tiện tự hành hoàn toàn. [C1, ¶ 12](sources/complaint-2023-04-07.pdf#page=4).
+
+**Thời gian / bối cảnh:** các nhân viên cũ mô tả việc chia sẻ trong 2019–2022; Reuters công bố điều tra ngày 06/04/2023 và Yeh nộp đơn ngày 07/04/2023. Văn phòng San Mateo là một địa điểm được phóng sự nhắc đến. [R1, R2, V1, V2](sources/README.md).
+
+**AI được dùng để làm gì:** ảnh/video giúp người gán nhãn xác định vật thể phục vụ phát triển hệ thống hỗ trợ lái. Con người trong vòng lặp huấn luyện có quyền nhìn dữ liệu và vì vậy cũng có thể là nguồn rủi ro; không phải cứ thêm human review là giảm mọi loại harm. [R1, mục về gán nhãn](sources/README.md#r1--phóng-sự-điều-tra-reuters).
+
+**Vấn đề:** Reuters mô tả việc một số nhân viên đưa nội dung khách hàng sang chat để tiêu khiển; đơn kiện đưa các hành vi này thành cáo buộc. Sự chuyển mục đích từ làm việc sang giải trí là trọng tâm phân tích, không phải mọi truy cập dữ liệu để gán nhãn đều là trái phép. [R1](sources/README.md#r1--phóng-sự-điều-tra-reuters); [C1, ¶¶ 15–19](sources/complaint-2023-04-07.pdf#page=4).
+
+**Số liệu:** 9 cựu nhân viên được Reuters dẫn về chia sẻ; 7 cựu nhân viên mô tả việc công cụ hiển thị vị trí. Giai đoạn tường thuật là 2019–2022. Con số này đo **nguồn lời kể và bối cảnh thời gian**, không đo số nạn nhân, số file hay tỷ lệ lỗi. [R1 và V1](sources/README.md).
+
+**Nguồn:** bảy nguồn R1, R2, C1, C2, S1, V1, V2 có tiêu đề, tác giả/đơn vị, ngày, URL và mục liên quan trong [danh mục nguồn](sources/README.md). Các PDF nguồn và [nhật ký tải](sources/crawl-log.json) được lưu để đối chiếu.
+
+**Bằng chứng / nhận định:** đã kiểm tra hồ sơ và quyết định tố tụng; không kiểm tra được các ảnh/video riêng tư được Reuters mô tả. Không coi việc gia đình Yeh lo ngại bị ghi hình là bằng chứng ảnh riêng của họ đã bị lan truyền. Phần Background của lệnh tòa cũng tách lập luận của Tesla rằng đơn gốc chưa nêu ảnh của Yeh bị chia sẻ và nội dung nguyên đơn bổ sung trong đơn sửa đổi. [C2, tr. 2–3](sources/court-order-2023-10-12.pdf#page=2).
+
+## 3. Số liệu, nguồn và điều không được suy ra
+
+| Dữ kiện | Đo điều gì / nguồn | Điều không được suy ra |
+| --- | --- | --- |
+| 9 cựu nhân viên | Nhóm nguồn lời kể Reuters dẫn về chia sẻ ảnh/video. R1; V1 dẫn lại. | Không phải 9 khách hàng bị hại hoặc 9 nhân viên được tòa xác định vi phạm. |
+| 7 cựu nhân viên | Nguồn lời kể về việc phần mềm hiển thị vị trí. R1; V1 dẫn lại. | Không tính 7/9 thành xác suất lộ vị trí hoặc độ chính xác tái định danh. |
+| Hơn 300 người được liên hệ; hơn 12 người trả lời | Phương pháp tìm nguồn của Reuters. R1. | Không phải mẫu ngẫu nhiên đại diện toàn bộ nhân viên; không suy ra tỷ lệ lạm dụng dữ liệu. |
+| 2019–2022 | Giai đoạn hành vi được mô tả trong điều tra/cáo buộc. R1; C1 ¶ 15. | Không suy ra mỗi ngày có sự cố hoặc hành vi tiếp diễn đến nay. |
+| Nhóm chủ/thuê xe trong thời kỳ bắt đầu 4 năm trước khi nộp đơn | Phạm vi nhóm được nguyên đơn đề xuất, C1 ¶ 30. | Không phải số nạn nhân đã xác minh hoặc nhóm đã được tòa chứng nhận. |
+| Mức tranh chấp được nguyên đơn nêu trên 5 triệu USD | Lập luận về thẩm quyền trong C1 ¶ 5. | Không phải khoản bồi thường đã tuyên, thiệt hại đã đo hay kết quả dàn xếp. |
+
+## 4. Chuỗi dữ liệu và lớp rủi ro
+
+Sơ đồ sau diễn giải **các chức năng được nguồn mô tả**, không phải kiến trúc kỹ thuật đầy đủ đã công bố của Tesla. Nhánh sai mục đích là tường thuật/cáo buộc cần giữ nhãn bằng chứng.
+
+```mermaid
+flowchart LR
+    A[Camera ghi ảnh hoặc video] --> B[Dữ liệu được cung cấp cho xử lý]
+    B --> C[Con người xem và gán nhãn]
+    C --> D[Phát triển hệ thống hỗ trợ lái]
+    C --> E[Chia sẻ ngoài công việc theo lời kể]
+    E --> F[Mất kiểm soát nội dung riêng tư]
+    B --> G[Vị trí hoặc chi tiết bối cảnh]
+    G --> H[Nguy cơ suy ra nơi ở hoặc danh tính]
+```
+
+### Failure mode
+
+Tôi chọn **Privacy leak + Misuse**: nội dung cần giới hạn mục đích sử dụng bị đưa đến người không cần xem cho công việc. Chia sẻ nội bộ cũng có thể làm mất quyền kiểm soát dữ liệu; không cần dữ liệu phải được đăng công khai mới phát sinh harm. Tuy nhiên, bài này không xác nhận việc phát tán ra ngoài công ty: đơn gốc suy đoán khả năng đó, còn bằng chứng trực tiếp chưa có. [C1, ¶ 2](sources/complaint-2023-04-07.pdf#page=2).
+
+Không gọi đây là jailbreak: chưa có bằng chứng vượt rào bảo vệ của một mô hình ngôn ngữ. Cũng không gọi là hallucination hay Model tự làm lộ dữ liệu. Người dùng công cụ có thể truy cập hợp lệ để gán nhãn nhưng sử dụng sai mục đích.
+
+### Layer
+
+Tôi quy chiếu vào **Safety**, hiểu là chức năng bảo vệ dữ liệu của toàn hệ thống AI: ai được xem, được dùng vào việc gì, có thể xuất/chia sẻ ra đâu, ai kiểm tra. Đây là đánh giá chức năng, không khẳng định Tesla không có phân quyền, kiểm toán hoặc một module an toàn cụ thể. Nguồn chưa đủ để xác định từng kiểm soát đã tồn tại hay vì sao nó không ngăn được hành vi được tường thuật.
+
+**UX** có liên quan đến việc chủ xe hiểu và đồng ý chia sẻ dữ liệu; đồng ý dùng dữ liệu để cải tiến sản phẩm không tự động là đồng ý cho nhân viên chế giễu nội dung. Thư S1 đặt câu hỏi về phạm vi truy cập, thời hạn lưu giữ và ẩn danh, nhưng không chứng minh mọi câu trả lời đều là thiếu kiểm soát. **Grounding/Model** không phải nơi bắt đầu lỗi đã có bằng chứng trong case. [S1, tr. 1–3](sources/senate-letter-2023-04-14.pdf).
+
+### Ẩn danh và tái định danh
+
+Không gắn một video với tài khoản/VIN vẫn có thể chưa đủ bảo vệ nếu vị trí, khuôn mặt, nhà riêng hoặc vật đặc trưng làm người xem suy ra chủ thể. Đó là **nguy cơ tái định danh**, không phải kết luận đã tái định danh thành công mọi người trong dữ liệu. Không suy từ một camera sang khẳng định Tesla đã thực hiện nhận dạng sinh trắc học trong từng clip. [R1, lời kể về vị trí; C1 ¶ 18](sources/complaint-2023-04-07.pdf#page=5).
+
+## 5. Harm Map Worksheet — phân tích chi tiết
+
+| Trường | Phân tích của tôi |
+| --- | --- |
+| High-risk moment | Người xử lý dữ liệu chuyển ảnh/video riêng tư được truy cập cho công việc sang chat giải trí hoặc chế thành meme. Vị trí và bối cảnh có thể làm lộ chủ thể dù file không gắn tài khoản/VIN. |
+| Stakeholder bị ảnh hưởng | Chủ xe, gia đình, trẻ em, hành khách, người xuất hiện trong hình và người qua đường. Tesla, nhân viên gán nhãn, quản lý và bộ phận bảo vệ dữ liệu chịu trách nhiệm quản trị liên quan; chưa có bảng số người bị hại được xác minh. |
+| Failure mode | **Privacy leak + Misuse**, theo quy chiếu của tôi. Trọng tâm là sử dụng/chia sẻ sai mục đích; không có bằng chứng về jailbreak, hacker ngoài công ty hoặc mô hình tự phát tán dữ liệu. |
+| Layer bắt đầu lỗi | **Safety** ở chức năng kiểm soát truy cập, mục đích sử dụng và phát tán trong hệ thống AI. Chưa đủ bằng chứng về cấu hình kiểm soát cụ thể hoặc nguyên nhân trong một module kỹ thuật. UX/đồng ý có thể góp phần; không quy lỗi vào Grounding hay trọng số Model. |
+| Harm xảy ra là gì? | **Theo tường thuật Reuters:** nội dung riêng tư bị lưu hành nội bộ ngoài nhu cầu công việc, làm chủ thể mất quyền kiểm soát việc ai nhìn và dùng dữ liệu. **Cáo buộc/chưa xác minh:** thiệt hại của riêng Yeh và gia đình, phát tán ngoài Tesla hoặc bồi thường. **Nguy cơ:** suy ra địa chỉ, theo dõi hoặc sử dụng tiếp theo; chưa xác nhận đã xảy ra trong các trường hợp này. |
+| Harm lens | **Privacy loss** là chính; **dignity loss** khi nội dung tế nhị bị chế giễu là nhận định của tôi. Không gán injury do việc chia sẻ chỉ vì một video mô tả tai nạn. |
+| Severity | **High**, đánh giá của tôi cho tình huống nội dung riêng tư/trẻ em bị chia sẻ và có thể lộ nơi ở. Nội dung đời thường có thể ít nghiêm trọng hơn; không áp một mức cho mọi file. Chưa có căn cứ chọn Critical cho hậu quả do hành vi chia sẻ. |
+| Scale | Tường thuật cho thấy nhiều trao đổi nội bộ giữa các cá nhân/nhóm; chưa có số file, số người bị quay hoặc số người bị hại đã kiểm chứng. Không dùng 9/7 người cung cấp lời kể, số xe Tesla hay nhóm khởi kiện được đề xuất thay cho số nạn nhân. |
+| Probability | **Chưa đủ dữ liệu để đánh giá xác suất**: thiếu tổng số file truy cập/chia sẻ, số khách hàng có dữ liệu và mẫu quan sát đại diện. Nguy cơ có cơ chế hợp lý nhưng chưa định lượng; không tự đặt phần trăm hoặc nhãn High. |
+| Frequency | Có lời kể về hành vi lặp lại trong **2019–2022**, nhưng không có số lần hoặc tỷ lệ theo thời gian. Reuters không xác định liệu hành vi còn tiếp diễn ở lúc công bố; không suy ra tần suất hiện tại. |
+| Vì sao? | R1 mô tả hành vi và nêu giới hạn điều tra; C1 là cáo buộc; C2 xác nhận tố tụng; S1 là yêu cầu giải trình; V1/V2 dẫn lại Reuters. Kết hợp này đủ để phân tích rủi ro của một case có thật, chưa đủ kết luận trách nhiệm pháp lý, lượng thiệt hại hoặc prevalence. |
+
+## 6. Human review và biện pháp kiểm soát đề xuất
+
+Bảng này là **đề xuất của tôi**, không phải mô tả các biện pháp Tesla chắc chắn chưa có hay đã triển khai. Hiệu quả của kiểm soát cần được kiểm tra bằng dữ liệu kiểm toán.
+
+| Điểm trong chuỗi dữ liệu | Người kiểm tra / kiểm soát đề xuất | Bằng chứng cần để đánh giá hiệu quả |
+| --- | --- | --- |
+| Trước thu thập/gửi dữ liệu | Nhóm bảo vệ dữ liệu và chủ sản phẩm rà soát mục đích, phạm vi, đồng ý của chủ xe và ảnh hưởng đến người thứ ba. Phân biệt dữ liệu cần cho lái xe với dữ liệu gửi để cải tiến. | Danh mục dữ liệu, cấu hình gửi dữ liệu và nội dung giải thích người dùng nhận được; không dùng một lời hứa chung thay cho kiểm soát thực tế. |
+| Trước người gán nhãn truy cập | Chỉ cho xem dữ liệu cần thiết; làm mờ chi tiết nhận dạng hoặc giảm độ chính xác vị trí khi không cần cho tác vụ; ngoại lệ cần người có trách nhiệm duyệt. | Kiểm thử ảnh/video mẫu tổng hợp, đánh giá chất lượng gán nhãn sau xử lý riêng tư và nhật ký ngoại lệ. Không khẳng định làm mờ luôn vô hại cho chất lượng AI. |
+| Khi xem hoặc xuất dữ liệu | Quyền theo nhiệm vụ, hạn chế xuất file và kiểm soát chia sẻ sang chat; xem xét khả năng chụp màn hình, không chỉ tải file. | Log xem/xuất/chia sẻ, thử truy cập sai quyền và kiểm tra đường vòng; không coi cấm tải là chứng minh không thể chụp lại. |
+| Giám sát sử dụng | Nhóm an toàn/bảo vệ dữ liệu độc lập rà soát truy cập bất thường, tiếp nhận báo cáo và có thẩm quyền ngăn hành vi sai mục đích. | Hồ sơ điều tra cảnh báo, quyết định và hành động khắc phục. Kiểm toán cũng phải hạn chế số người nhìn nội dung nhạy cảm. |
+| Khi có sự cố | Đội ứng phó kiểm tra ai đã truy cập, file nào và phạm vi phân phối; bảo toàn bằng chứng, chặn truy cập tiếp và thực hiện nghĩa vụ thông báo nếu áp dụng. | Phạm vi được xác minh, log chuỗi truy cập, biên bản xử lý và việc xóa bản sao trong phạm vi kiểm soát; không hứa thu hồi tuyệt đối sau khi đã bị sao chép. |
+
+**Vì sao không đơn giản tắt camera?** Camera phục vụ chức năng hỗ trợ lái, còn câu hỏi ở đây là quyền truy cập và sử dụng thứ cấp. Đơn gốc nêu việc tắt camera có thể ảnh hưởng chức năng và giá trị xe, nhưng đó là lập luận của nguyên đơn. Tôi ưu tiên giảm dữ liệu và kiểm soát mục đích thay vì khuyên chủ xe tự vô hiệu hóa chức năng an toàn; chưa xác minh trong case rằng mọi tùy chọn chia sẻ dữ liệu và ghi hình đều có cùng tác động. [C1, ¶¶ 26–29](sources/complaint-2023-04-07.pdf#page=7).
+
+## 7. Đối chiếu pháp lý, báo chí và tiếng Việt
+
+| Mốc | Nội dung và phạm vi kết luận |
+| --- | --- |
+| 06/04/2023 | R1 công bố điều tra dựa trên lời kể. Có bằng chứng về một bài điều tra, không phải bản án hoặc bộ file camera được kiểm chứng độc lập. |
+| 07/04/2023 | C1 nộp đơn kiện yêu cầu khởi kiện tập thể. Đề xuất nhóm và yêu cầu bồi thường không phải chứng nhận nhóm hay khoản đã được tuyên. |
+| 08/04 và 11/04/2023 | V1/V2 giúp đối chiếu thuật ngữ bằng tiếng Việt; cùng dẫn Reuters nên không tính thành hai điều tra độc lập. |
+| 14/04/2023 | S1 yêu cầu Tesla giải trình; không phải kết luận xử phạt hoặc chứng minh Tesla đã trả lời theo một nội dung cụ thể. |
+| 12/10/2023 | C2 chấp nhận yêu cầu trọng tài, tạm dừng và đóng hồ sơ hành chính. Không phải tuyên Tesla vô tội, có lỗi, đã bồi thường hoặc đã thắng/thua về nội dung privacy. |
+
+Nguồn VnExpress dùng tiêu đề mô tả việc xâm phạm đời tư. Khi đưa vào bài phân tích, tôi vẫn viết **tường thuật/cáo buộc** và dùng hồ sơ tòa để xác định điều đã được quyết định. Phần này không khẳng định trạng thái hiện tại hoặc kết quả trọng tài chỉ từ lệnh năm 2023. [C2, tr. 14–15](sources/court-order-2023-10-12.pdf#page=14).
+
+## 8. Giới hạn bằng chứng và bài học trong cùng ngành
+
+- Không có các clip Reuters nói đã bị chia sẻ để tự kiểm chứng, không có mẫu ngẫu nhiên hay log truy cập toàn hệ thống. Số người cung cấp lời kể không cho phép ước lượng tỷ lệ khách hàng chịu hại.
+- Nhiều nguồn cùng dựa trên Reuters: đơn kiện, thư Thượng viện và bài tiếng Việt không tạo ra nhiều bộ nhân chứng độc lập. Lệnh tòa là nguồn độc lập cho **tố tụng**, không xác nhận mọi hành vi được cáo buộc.
+- Không đồng nhất camera hỗ trợ lái, dữ liệu gửi để phát triển AI và Sentry Mode; đơn sửa đổi được C2 tóm tắt có thêm lập luận về Sentry Mode, nhưng không chứng minh mọi loại dữ liệu đi qua cùng một đường truyền.
+- Không khẳng định dữ liệu đã ra ngoài Tesla, tất cả chủ xe bị quay, Tesla dùng nhận dạng sinh trắc học trong các clip, hoặc một luật bảo vệ dữ liệu cụ thể đã bị vi phạm khi chưa có căn cứ áp dụng và kết luận tương ứng.
+- **So với Case 1:** Uber Tempe có tử vong và chuỗi sự kiện được NTSB điều tra; Tesla có dữ liệu đời tư và cáo buộc quản trị dữ liệu. Cùng một ngành có thể cần human review để giảm lỗi vận hành nhưng phải hạn chế quyền con người đối với dữ liệu để giảm rủi ro riêng tư. Hai loại harm cần thang bằng chứng và cách kiểm soát khác nhau.

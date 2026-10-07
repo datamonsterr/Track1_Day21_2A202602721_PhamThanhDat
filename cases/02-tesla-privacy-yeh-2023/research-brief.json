@@ -1,0 +1,65 @@
+{
+  "context_version": 1,
+  "as_of_utc": "2026-10-07T17:19:32.770574+00:00",
+  "symbol": "YEH_V_TESLA_3_23_CV_01704",
+  "freshness_seconds": 818,
+  "freshness_definition": "Elapsed seconds since the earliest source-fetch attempt in this research run; not the age of the historical event.",
+  "source_count": 7,
+  "quality_score": null,
+  "quality_score_reason": "No validated numerical scoring rubric; report states source roles and limits instead of inventing a quality percentage.",
+  "payload": {
+    "summary": "Case có thật trong chuỗi dữ liệu AI hỗ trợ lái: Reuters tường thuật việc chia sẻ dữ liệu camera sai mục đích; Henry Yeh nộp đơn kiện ngày 07/04/2023; lệnh 12/10/2023 yêu cầu trọng tài, không quyết định đúng/sai về nội dung privacy. Harm Map chọn Privacy leak + Misuse, Safety theo chức năng quản trị dữ liệu, Severity High theo nhận định cá nhân.",
+    "uncertainty": [
+      "Chưa có các file riêng tư được Reuters mô tả để kiểm chứng trực tiếp.",
+      "Chưa có số nạn nhân, số file, mẫu số xác suất hoặc tần suất đáng tin cậy.",
+      "9 và 7 là số nguồn lời kể, không phải số người bị hại.",
+      "Chưa xác minh ảnh riêng của gia đình Yeh bị chia sẻ hoặc việc phát tán ngoài Tesla.",
+      "Không kết luận kết quả trọng tài hoặc trạng thái hiện tại từ lệnh năm 2023.",
+      "Nhiều nguồn cùng phụ thuộc vào điều tra Reuters; không tính là nhiều bộ bằng chứng độc lập."
+    ]
+  },
+  "citations": [
+    {
+      "id": "R1",
+      "title": "Special Report: Tesla workers shared sensitive images recorded by customer cars",
+      "url": "https://www.reuters.com/technology/tesla-workers-shared-sensitive-images-recorded-by-customer-cars-2023-04-06/",
+      "read_url": "https://www.investing.com/news/stock-market-news/special-report--tesla-workers-shared-sensitive-images-recorded-by-customer-cars-3050469"
+    },
+    {
+      "id": "R2",
+      "title": "Tesla hit with class action lawsuit over alleged privacy intrusion",
+      "url": "https://www.reuters.com/business/autos-transportation/tesla-hit-with-class-action-lawsuit-over-alleged-privacy-intrusion-2023-04-08/",
+      "read_url": "https://www.investing.com/news/stock-market-news/tesla-hit-with-class-action-lawsuit-over-alleged-privacy-intrusion-3050974"
+    },
+    {
+      "id": "C1",
+      "title": "Yeh v. Tesla, Inc. — Class Action Complaint",
+      "url": "https://www.classaction.org/media/yeh-v-tesla-inc.pdf",
+      "read_url": "https://www.classaction.org/media/yeh-v-tesla-inc.pdf"
+    },
+    {
+      "id": "C2",
+      "title": "Order Granting Motion to Compel Arbitration",
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_23-cv-01704/pdf/USCOURTS-cand-3_23-cv-01704-1.pdf",
+      "read_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_23-cv-01704/pdf/USCOURTS-cand-3_23-cv-01704-1.pdf"
+    },
+    {
+      "id": "S1",
+      "title": "Letter to Tesla on Vehicle Camera Recordings from Senators Markey and Blumenthal",
+      "url": "https://www.markey.senate.gov/imo/media/doc/letter_to_tesla_on_vehicle_camera_recordings_from_senators_markey_and_blumenthal.pdf",
+      "read_url": "https://www.markey.senate.gov/imo/media/doc/letter_to_tesla_on_vehicle_camera_recordings_from_senators_markey_and_blumenthal.pdf"
+    },
+    {
+      "id": "V1",
+      "title": "Nhân viên Tesla chia sẻ hình ảnh nhạy cảm của khách hàng",
+      "url": "https://vnexpress.net/nhan-vien-tesla-chia-se-hinh-anh-nhay-cam-cua-khach-hang-4590667.html",
+      "read_url": "https://vnexpress.net/nhan-vien-tesla-chia-se-hinh-anh-nhay-cam-cua-khach-hang-4590667.html"
+    },
+    {
+      "id": "V2",
+      "title": "Tesla bị kiện vì xâm phạm đời tư",
+      "url": "https://vnexpress.net/tesla-bi-kien-vi-xam-pham-doi-tu-4591528.html",
+      "read_url": "https://vnexpress.net/tesla-bi-kien-vi-xam-pham-doi-tu-4591528.html"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "id": "complaint",
+    "url": "https://www.classaction.org/media/yeh-v-tesla-inc.pdf",
+    "retrieved_at_utc": "2026-10-07T17:05:54.376693+00:00",
+    "http_status": 200,
+    "resolved_url": "https://www.classaction.org/media/yeh-v-tesla-inc.pdf",
+    "content_type": "application/pdf",
+    "archive": "complaint-2023-04-07.pdf",
+    "size_bytes": 331093,
+    "sha256": "fbdada4921cb44d451b7214b921ca46c6c76fcaad356b59df71b0093b3abb5dc"
+  },
+  {
+    "id": "court-order",
+    "url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_23-cv-01704/pdf/USCOURTS-cand-3_23-cv-01704-1.pdf",
+    "retrieved_at_utc": "2026-10-07T17:05:54.377438+00:00",
+    "http_status": 200,
+    "resolved_url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-3_23-cv-01704/pdf/USCOURTS-cand-3_23-cv-01704-1.pdf",
+    "content_type": "application/pdf",
+    "archive": "court-order-2023-10-12.pdf",
+    "size_bytes": 354698,
+    "sha256": "6872362455ab0dee2c468b0f9d328fcbc8ebadbe59d758e24d08102346d3b772"
+  },
+  {
+    "id": "senate-letter",
+    "url": "https://www.markey.senate.gov/imo/media/doc/letter_to_tesla_on_vehicle_camera_recordings_from_senators_markey_and_blumenthal.pdf",
+    "retrieved_at_utc": "2026-10-07T17:05:54.377947+00:00",
+    "http_status": 200,
+    "resolved_url": "https://www.markey.senate.gov/imo/media/doc/letter_to_tesla_on_vehicle_camera_recordings_from_senators_markey_and_blumenthal.pdf",
+    "content_type": "application/pdf",
+    "archive": "senate-letter-2023-04-14.pdf",
+    "size_bytes": 132026,
+    "sha256": "44cc0cce045aefc1099d5ff83c9e78ef9fda4cbfda6eb17ff128451fe2ad1eb7"
+  },
+  {
+    "id": "reuters-original-investigation",
+    "url": "https://www.reuters.com/technology/tesla-workers-shared-sensitive-images-recorded-by-customer-cars-2023-04-06/",
+    "retrieved_at_utc": "2026-10-07T17:05:54.378253+00:00",
+    "http_status": 401,
+    "resolved_url": "https://www.reuters.com/technology/tesla-workers-shared-sensitive-images-recorded-by-customer-cars-2023-04-06/",
+    "content_type": "text/html;charset=utf-8",
+    "note": "Direct fetch unsuccessful; use clearly attributed accessible syndication or web-tool reading where available."
+  },
+  {
+    "id": "reuters-original-lawsuit",
+    "url": "https://www.reuters.com/business/autos-transportation/tesla-hit-with-class-action-lawsuit-over-alleged-privacy-intrusion-2023-04-08/",
+    "retrieved_at_utc": "2026-10-07T17:05:54.378531+00:00",
+    "http_status": 401,
+    "resolved_url": "https://www.reuters.com/business/autos-transportation/tesla-hit-with-class-action-lawsuit-over-alleged-privacy-intrusion-2023-04-08/",
+    "content_type": "text/html;charset=utf-8",
+    "note": "Direct fetch unsuccessful; use clearly attributed accessible syndication or web-tool reading where available."
+  },
+  {
+    "id": "reuters-syndicated-investigation",
+    "url": "https://www.investing.com/news/stock-market-news/special-report--tesla-workers-shared-sensitive-images-recorded-by-customer-cars-3050469",
+    "retrieved_at_utc": "2026-10-07T17:05:54.710224+00:00",
+    "error": "SSLError: HTTPSConnectionPool(host='www.investing.com', port=443): Max retries exceeded with url: /news/stock-market-news/special-report--tesla-workers-shared-sensitive-images-recorded-by-customer-cars-3050469 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1082)')))"
+  },
+  {
+    "id": "reuters-syndicated-lawsuit",
+    "url": "https://www.investing.com/news/stock-market-news/tesla-hit-with-class-action-lawsuit-over-alleged-privacy-intrusion-3050974",
+    "retrieved_at_utc": "2026-10-07T17:05:54.715844+00:00",
+    "error": "SSLError: HTTPSConnectionPool(host='www.investing.com', port=443): Max retries exceeded with url: /news/stock-market-news/tesla-hit-with-class-action-lawsuit-over-alleged-privacy-intrusion-3050974 (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1082)')))"
+  },
+  {
+    "id": "vnexpress-investigation",
+    "url": "https://vnexpress.net/nhan-vien-tesla-chia-se-hinh-anh-nhay-cam-cua-khach-hang-4590667.html",
+    "retrieved_at_utc": "2026-10-07T17:05:54.881342+00:00",
+    "http_status": 200,
+    "resolved_url": "https://vnexpress.net/nhan-vien-tesla-chia-se-hinh-anh-nhay-cam-cua-khach-hang-4590667.html",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Nhân viên Tesla chia sẻ hình ảnh nhạy cảm của khách hàng - Báo VnExpress",
+    "archive": null,
+    "note": "HTML parsed temporarily for source review; full article not republished in repository."
+  },
+  {
+    "id": "vnexpress-lawsuit",
+    "url": "https://vnexpress.net/tesla-bi-kien-vi-xam-pham-doi-tu-4591528.html",
+    "retrieved_at_utc": "2026-10-07T17:05:54.884245+00:00",
+    "http_status": 200,
+    "resolved_url": "https://vnexpress.net/tesla-bi-kien-vi-xam-pham-doi-tu-4591528.html",
+    "content_type": "text/html; charset=UTF-8",
+    "title": "Tesla bị kiện vì xâm phạm đời tư - Báo VnExpress",
+    "archive": null,
+    "note": "HTML parsed temporarily for source review; full article not republished in repository."
+  }
+]

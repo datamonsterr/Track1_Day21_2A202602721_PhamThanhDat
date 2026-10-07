@@ -2,14 +2,12 @@
 
 - Họ và tên: Phạm Thanh Đạt
 - MSSV / mã học viên: 2A202602721
-- Lớp: [Điền lớp]
+- Lớp: H201
 - Ngành đã chọn: Mobility / autonomous driving — Phương tiện Di chuyển & Xe tự hành (AV)
 
-> Đây là khung báo cáo cá nhân. Thay các nội dung trong ngoặc vuông bằng bài làm của mình trước khi nộp.
+> Bài cá nhân phân tích hai case trong ngành Mobility / autonomous driving: an toàn vật lý của xe thử nghiệm Uber ATG và quyền riêng tư trong chuỗi dữ liệu AI của Tesla. Nhãn rủi ro là đánh giá định tính phục vụ bài tập, không phải phân loại pháp lý.
 >
-> Chọn đúng một ngành: HR / tuyển dụng; Giáo dục / AI tutor; Y tế / symptom checker / health assistant; Mobility / autonomous driving; Media / news / social / political assistant; Content creator.
->
-> Phân tích 2–3 case AI có thật trong cùng ngành. Mỗi case cần có số liệu liên quan, nguồn kiểm tra được và đủ 11 trường Harm Map. Phân biệt sự kiện có nguồn với nhận định cá nhân, hậu quả đã xảy ra với nguy cơ có thể xảy ra. Khi thiếu bằng chứng, ghi rõ “chưa đủ bằng chứng” hoặc “chưa đủ dữ liệu để đánh giá”.
+> Phân biệt kết luận điều tra, tường thuật báo chí, cáo buộc trong đơn kiện và nhận định cá nhân. “Chưa đủ dữ liệu để đánh giá” là kết luận có giải thích về giới hạn bằng chứng, không phải một trường bị bỏ trống.
 
 ### 1. Industry Risk Snapshot
 
@@ -91,32 +89,40 @@ Mức độ can thiệp bắt buộc tương ứng trực tiếp với các cấ
 | Frequency | **1 vụ được phân tích**, không phải kết luận toàn đội xe chỉ từng gặp lỗi một lần. Báo cáo không cho tần suất lặp lại cùng chuỗi lỗi; 37 sự cố đội xe thuộc nhiều loại nên không dùng làm tỷ lệ lỗi này. |
 | Vì sao? | NTSB tr. 1–2, 5, 13–17, 19–22, 57–59 xác nhận hậu quả và chuỗi mất dự phòng. **Critical** dựa trên tử vong thực tế; Scale, Probability và Frequency được đánh giá riêng, không suy ra từ Severity. [Lập luận và biện pháp kiểm soát](cases/01-uber-tempe-2018/analysis.md#8-đánh-giá-harm-map-và-điểm-can-thiệp). |
 
-### 3. Case study 2 — [Tên case]
+### 3. Case study 2 — Yeh v. Tesla, Inc.: quyền riêng tư dữ liệu camera (2023)
 
 #### Brief Case
 
-- Tổ chức / sản phẩm AI: [Điền]
-- Thời gian, địa điểm / bối cảnh: [Điền]
-- AI được dùng để làm gì: [Điền]
-- Vấn đề hoặc sự kiện đáng chú ý: [Điền sự kiện có nguồn]
-- Số liệu có nguồn: [Con số, đơn vị, thời gian/phạm vi đo và nguồn nào cung cấp]
-- Nguồn: [Tên tài liệu/bài viết — đơn vị/tác giả — ngày công bố — URL — trang/mục liên quan nếu có]
-- Phân biệt bằng chứng và nhận định: [Điều nguồn xác nhận; điều tôi suy luận hoặc còn chưa rõ]
+- Tổ chức / sản phẩm AI: Tesla; dữ liệu camera và quy trình gán nhãn phục vụ phát triển công nghệ hỗ trợ lái Autopilot. Nguyên đơn là **Henry Yeh**; tên hồ sơ là **Yeh v. Tesla, Inc., 3:23-cv-01704**.
+- Thời gian, địa điểm / bối cảnh: Reuters điều tra hành vi được cựu nhân viên mô tả trong **2019–2022**; đơn kiện nộp **07/04/2023** tại Tòa án Liên bang Khu vực Bắc California, Mỹ. Văn phòng San Mateo được nhắc đến trong phóng sự.
+- AI được dùng để làm gì: Camera cung cấp ảnh/video để con người gán nhãn vật thể phục vụ phát triển hệ thống hỗ trợ lái. Rủi ro nằm trong chuỗi dữ liệu AI và việc con người sử dụng dữ liệu, không phải một lỗi quyết định lái xe được chứng minh trong vụ kiện.
+- Vấn đề hoặc sự kiện đáng chú ý: Theo Reuters, một số nhân viên chia sẻ ảnh/video khách hàng trong chat nội bộ ngoài mục đích công việc, có nội dung đời tư và vị trí ghi hình. Yeh kiện về các hành vi bị cáo buộc. Lệnh **12/10/2023** yêu cầu trọng tài và tạm dừng vụ án; không phải phán quyết xác nhận Tesla vi phạm quyền riêng tư.
+- Số liệu có nguồn: Reuters dẫn **9 cựu nhân viên** về chia sẻ ảnh/video; **7 cựu nhân viên** cho biết công cụ hiển thị vị trí ghi hình, trong bối cảnh **2019–2022**. Đây là số người cung cấp lời kể, **không phải số nạn nhân hoặc tỷ lệ rò rỉ**. Reuters không thu được các file đã chia sẻ và không xác định được mức độ phổ biến.
+- Nguồn: [Reuters — Steve Stecklow, Waylon Cunningham, Hyunjoo Jin — 06/04/2023](https://www.investing.com/news/stock-market-news/special-report--tesla-workers-shared-sensitive-images-recorded-by-customer-cars-3050469); [đơn kiện, Document 1 — 07/04/2023, ¶¶ 12–19](cases/02-tesla-privacy-yeh-2023/sources/complaint-2023-04-07.pdf#page=4); [lệnh tòa, Document 52 — 12/10/2023, tr. 1–3, 14–15](cases/02-tesla-privacy-yeh-2023/sources/court-order-2023-10-12.pdf); VnExpress/Mỹ Anh: [bài điều tra, 08/04/2023](https://vnexpress.net/nhan-vien-tesla-chia-se-hinh-anh-nhay-cam-cua-khach-hang-4590667.html) và [bài về vụ kiện, 11/04/2023](https://vnexpress.net/tesla-bi-kien-vi-xam-pham-doi-tu-4591528.html). [Danh mục nguồn và nhật ký thu thập](cases/02-tesla-privacy-yeh-2023/sources/README.md).
+- Phân biệt bằng chứng và nhận định: Việc nộp đơn và lệnh trọng tài có hồ sơ tòa; hành vi chia sẻ là tường thuật Reuters và cáo buộc, chưa được lệnh này xét xử về nội dung. Không xác nhận ảnh của riêng gia đình Yeh đã bị chia sẻ, dữ liệu đã công khai ngoài Tesla hoặc mọi khách hàng đều là nạn nhân. Nhãn Harm Map dưới đây là nhận định của tôi.
 
 #### Harm Map Worksheet
 
 | Trường | Phân tích của tôi |
 | --- | --- |
-| High-risk moment | [Tình huống cụ thể có rủi ro] |
-| Stakeholder bị ảnh hưởng | [Người dùng và các bên liên quan] |
-| Failure mode | [Kiểu lỗi AI; chọn mục giải thích được: Hallucination / Bias / fairness / Sycophancy / Over-reliance / Harmful advice / Privacy leak / Escalation failure / Misuse / jailbreak] |
-| Layer bắt đầu lỗi | [UX / Grounding / Safety / Model; giải thích hoặc ghi chưa đủ bằng chứng] |
-| Harm xảy ra là gì? | [Ai bị ảnh hưởng + hậu quả; ghi rõ đã xảy ra hay mới là nguy cơ] |
-| Harm lens | [Chọn loại phù hợp: misinformation / opportunity loss / injury / privacy loss / dignity loss] |
-| Severity | [Low / Medium / High / Critical; giải thích bằng hậu quả] |
-| Scale | [Quy mô tác động và căn cứ; nêu phạm vi hoặc số người có nguồn, hoặc ghi chưa đủ dữ liệu] |
-| Probability | [Khả năng xảy ra và căn cứ; tỷ lệ đo được nếu có, hoặc nhận định định tính có giải thích] |
-| Frequency | [Tần suất và căn cứ; số liệu có nguồn hoặc nhận định định tính có giải thích] |
-| Vì sao? | [Lý do cho các đánh giá; nguồn hoặc giới hạn bằng chứng] |
+| High-risk moment | Nhân viên truy cập ảnh/video để gán nhãn rồi chuyển nội dung riêng tư sang chat giải trí ngoài mục đích được phép; vị trí hoặc chi tiết trong hình có thể làm lộ danh tính. |
+| Stakeholder bị ảnh hưởng | Chủ xe, thành viên gia đình, trẻ em, hành khách và người được ghi hình; nhân viên xử lý dữ liệu, Tesla và bộ phận bảo vệ dữ liệu là các bên liên quan. |
+| Failure mode | **Privacy leak + Misuse**, theo quy chiếu của tôi: dữ liệu dùng sai mục đích và chia sẻ ngoài nhu cầu công việc. Chưa có bằng chứng về jailbreak, hacker bên ngoài hoặc mô hình AI tự làm lộ dữ liệu. |
+| Layer bắt đầu lỗi | **Safety**, theo chức năng kiểm soát truy cập/sử dụng dữ liệu trong toàn hệ thống AI; kiến trúc kiểm soát cụ thể chưa đủ bằng chứng. UX/đồng ý chia sẻ là yếu tố cần xem xét; không kết luận lỗi bắt đầu từ Model hay Grounding. |
+| Harm xảy ra là gì? | **Được Reuters tường thuật, chưa được lệnh tòa xác nhận về nội dung:** người được ghi hình mất kiểm soát dữ liệu riêng tư khi nội dung bị chia sẻ để tiêu khiển. Lộ địa chỉ, phát tán ra ngoài và thiệt hại của riêng gia đình Yeh vẫn là nguy cơ/cáo buộc chưa xác minh. |
+| Harm lens | **Privacy loss**; **dignity loss** đối với nội dung nhạy cảm bị chế giễu, theo đánh giá của tôi. Không coi tai nạn xuất hiện trong video là hậu quả do việc chia sẻ dữ liệu gây ra. |
+| Severity | **High**, đánh giá định tính dựa trên nội dung riêng tư, trẻ em và khả năng suy ra nơi ở; mức thiệt hại của từng người chưa xác định. Không chọn Critical chỉ vì video có cảnh tai nạn. |
+| Scale | Tường thuật cho thấy chia sẻ nội bộ giữa một số nhân viên/nhóm; **chưa có số nạn nhân hoặc số file xác minh**. 9 và 7 là số nguồn lời kể, không phải quy mô người bị hại; nhóm khởi kiện được đề xuất không đồng nghĩa tất cả chủ xe đã chịu hại. |
+| Probability | **Chưa đủ dữ liệu để đánh giá xác suất**: không có mẫu số file được truy cập/chia sẻ hay số khách hàng có dữ liệu trong hệ thống. Không tính 7/9 thành tỷ lệ lộ vị trí hoặc rò rỉ. |
+| Frequency | Nhiều lần chia sẻ được cựu nhân viên mô tả trong 2019–2022; **không có số lần hoặc tần suất/ngày**. Không khẳng định hành vi tiếp diễn ở thời điểm hiện tại. |
+| Vì sao? | Reuters ghi lời kể và giới hạn điều tra; đơn kiện là cáo buộc; lệnh tòa chỉ giải quyết trọng tài. Privacy/dignity có thể bị tổn hại dù chia sẻ chỉ diễn ra nội bộ, nhưng thiếu căn cứ định lượng. [Phân tích sâu và đối chiếu nguồn](cases/02-tesla-privacy-yeh-2023/analysis.md). |
 
-<!-- Nếu làm case thứ ba, sao chép cả phần Brief Case và Harm Map của case 2, đổi tiêu đề thành “### 4. Case study 3 — [Tên case]”, rồi điền bài làm. -->
+### 4. Đối chiếu yêu cầu bài cá nhân
+
+| Yêu cầu | Nội dung đã có |
+| --- | --- |
+| Chọn một ngành | Mobility / autonomous driving; cả hai case thuộc ngành này, ở hai giai đoạn vận hành và phát triển dữ liệu AI. |
+| Industry Risk Snapshot | Harm chính, high-stakes, dữ liệu nhạy cảm và human review đều có đánh giá, lý do; bổ sung áp lực tuân thủ. |
+| Hai Brief Case có số liệu và nguồn | Mỗi case có đủ 7 trường; số liệu kèm phạm vi và nguồn, không dùng số nhân chứng làm số nạn nhân. |
+| Harm Map cho từng case | Mỗi case có đủ 11 trường; Severity, Scale, Probability và Frequency được đánh giá riêng, có giới hạn bằng chứng. |
+| Hồ sơ đối chiếu | [Case 1](cases/01-uber-tempe-2018/analysis.md) có PDF NTSB; [Case 2](cases/02-tesla-privacy-yeh-2023/analysis.md) có hồ sơ tòa, thư Thượng viện, nguồn Reuters/VnExpress và nhật ký thu thập. |
