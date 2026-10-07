@@ -86,3 +86,25 @@ Khoảng **5,6 giây** là thời gian kể từ khi ADS phát hiện vật th�
 - **Không suy diễn kiến trúc AI.** Báo cáo mô tả hành vi perception, tracking, prediction và braking, nhưng không đủ để kết luận về tập huấn luyện hoặc mô hình cụ thể. Không gán nhãn bias, hallucination hay privacy leak khi không có bằng chứng tương ứng.
 - **Không xem kết luận điều tra là phán quyết trách nhiệm pháp lý.** NTSB mô tả báo cáo là điều tra tìm hiểu sự kiện để cải thiện an toàn, không nhằm xác định quyền hoặc trách nhiệm pháp lý của cá nhân/tổ chức. [Trang thông tin xuất bản, PDF 3](har1903.pdf#page=3).
 - **Không ngoại suy sang mọi AV hoặc hệ thống hiện tại.** Những kết luận trên áp dụng cho vụ tai nạn và hệ thống thử nghiệm được báo cáo; không tự động đại diện cho tất cả xe tự hành hoặc phiên bản phần mềm sau này.
+
+## 8. Đánh giá Harm Map và điểm can thiệp
+
+### Vì sao các trường không có cùng mức đánh giá?
+
+**Severity là Critical** vì nguồn xác nhận một người đã tử vong. **Scale trực tiếp là một nạn nhân** trong vụ được điều tra, không phải mọi chủ xe thử nghiệm. **Probability và Frequency chưa đủ dữ liệu** vì báo cáo không cung cấp số lần phơi nhiễm với cùng tình huống hoặc số lần lặp lại chính xác cùng chuỗi lỗi. Ghi giới hạn bằng chứng là một kết quả đánh giá, không phải bỏ trống trường.
+
+NTSB phân tích một chuỗi mất dự phòng: phát hiện vật thể nhưng không hiểu đúng đường đi; thiết kế xử lý khẩn cấp không ưu tiên giảm hậu quả khi không tránh được va chạm; lớp FCW/AEB gốc không hoạt động; người vận hành mất tập trung; tổ chức không quản lý hữu hiệu các rủi ro này. Vì vậy, việc cải thiện độ chính xác nhận dạng đơn lẻ chưa đủ để giải quyết toàn bộ Harm Map. [Tr. 39–45, 57–59](har1903.pdf#page=51).
+
+### Ai cần kiểm tra, tại thời điểm nào?
+
+Bảng dưới đây là **đề xuất của tôi** dựa trên các vấn đề NTSB nêu, không phải khẳng định mọi biện pháp đã được triển khai.
+
+| Điểm can thiệp | Người chịu trách nhiệm kiểm tra | Điều cần kiểm tra và bằng chứng để chấp nhận |
+| --- | --- | --- |
+| Trước thử nghiệm trên đường công cộng | Nhóm an toàn độc lập và người phê duyệt thử nghiệm | Kịch bản người dắt xe đạp sang đường ngoài vạch; lịch sử tracking còn được sử dụng sau đổi nhãn; giới hạn hệ thống và phương án dự phòng được kiểm thử, ghi lại. |
+| Khi tích hợp ADS với xe | Kỹ sư hệ thống và người kiểm định an toàn | Xung đột radar/lệnh phanh được xử lý; mất một chức năng không đồng thời làm mất mọi lớp giảm thiểu va chạm. Không coi việc vô hiệu hóa AEB là giải pháp đầy đủ khi chưa có dự phòng tương đương. |
+| Khi xe gặp tình huống khẩn cấp | ADS thực thi dự phòng kỹ thuật; người vận hành đã được đào tạo giám sát và can thiệp | Cảnh báo phải có thời gian để phản ứng; phương tiện vẫn cần giảm mức độ va chạm khi không thể tránh hoàn toàn. Không dựa vào một giả định rằng người vận hành luôn tập trung. |
+| Trong chuyến thử nghiệm | Người vận hành chính, người giám sát bổ sung và quản lý ca | Theo dõi sự chú ý, kiểm soát dùng điện thoại và phân công rõ việc quan sát/ghi chú. Human review cần cơ chế giám sát hữu hiệu, không chỉ tên một người trong quy trình. |
+| Sau sự cố hoặc near-miss | Nhóm điều tra/an toàn và người phê duyệt chạy lại | Đối chiếu log, video và các thời điểm cảnh báo/phanh; tái hiện trong mô phỏng hoặc sân thử; kiểm tra hồi quy và điều kiện chạy lại trước khi tiếp tục thử công cộng. |
+
+**Đánh đổi cần quản lý:** tránh phanh nhầm có thể là mục tiêu hợp lý, nhưng trì hoãn phanh và không giảm thiệt hại khi va chạm không tránh được làm giảm dự phòng trong vụ này. Cần kiểm thử cả false positive lẫn false negative và hậu quả của mỗi loại; không tối ưu cảm giác vận hành êm bằng cách bỏ qua tổn hại có thể giảm được. Đây là nhận định của tôi từ thiết kế action suppression và kết luận của NTSB. [Tr. 13–14, 40–41](har1903.pdf#page=52).

@@ -79,17 +79,17 @@ Mức độ can thiệp bắt buộc tương ứng trực tiếp với các cấ
 
 | Trường | Phân tích của tôi |
 | --- | --- |
-| High-risk moment | Người đi bộ dắt xe đạp cắt ngang đường xe thử nghiệm; ADS nhận ra tình huống khẩn cấp chỉ 1,2 giây trước va chạm. |
-| Stakeholder bị ảnh hưởng | Người đi bộ là nạn nhân trực tiếp; người vận hành, gia đình nạn nhân, Uber ATG và cơ quan quản lý là các bên liên quan. |
-| Failure mode | Escalation failure: phương án dự phòng dựa vào người vận hành không ngăn được va chạm; Over-reliance: automation complacency góp phần làm giám sát suy giảm. Lỗi kỹ thuật đi kèm là phân loại vật thể và dự đoán quỹ đạo sai. |
-| Layer bắt đầu lỗi | Model, theo chức năng perception/prediction; Safety không bù được lỗi: trì hoãn phanh và vô hiệu hóa FCW/AEB của Volvo. Chưa đủ bằng chứng để quy nguyên nhân cho riêng trọng số mô hình hay dữ liệu huấn luyện. |
+| High-risk moment | Trong 5,6 giây trước va chạm, người đi bộ dắt xe đạp cắt ngang quỹ đạo xe. ADS chỉ xác định tình huống khẩn cấp ở mốc −1,2 giây, rồi trì hoãn phanh 1 giây trong khi người vận hành mất tập trung. |
+| Stakeholder bị ảnh hưởng | Người đi bộ là nạn nhân trực tiếp; gia đình, người vận hành, Uber ATG, người tham gia giao thông và cơ quan quản lý là các bên liên quan. Thiệt hại gián tiếp chưa được định lượng. |
+| Failure mode | **Escalation failure**, theo quy chiếu của tôi: dự phòng dựa vào người vận hành không xử lý nguy cơ kịp thời; **Over-reliance** tương ứng với automation complacency được NTSB phân tích. Cơ chế kỹ thuật là phân loại vật thể và dự đoán quỹ đạo sai; không gọi đây là hallucination. |
+| Layer bắt đầu lỗi | Lỗi đầu chuỗi nằm ở perception/tracking/prediction, quy chiếu chức năng vào **Model**; **Safety** không chặn hậu quả vì trì hoãn phanh và FCW/AEB của Volvo không hoạt động. Chưa đủ bằng chứng để xác định lỗi do riêng trọng số, dữ liệu huấn luyện hay quy tắc phần mềm; không gán Grounding khi thiếu căn cứ. |
 | Harm xảy ra là gì? | **Đã xảy ra:** một người đi bộ tử vong do va chạm; người vận hành không bị thương. |
 | Harm lens | Injury — tổn hại thể chất dẫn đến tử vong. |
 | Severity | **Critical** — nhận định của tôi vì hậu quả là mất tính mạng. |
-| Scale | **1 người tử vong trong 1 vụ va chạm**; chưa có căn cứ để ngoại suy số người chịu cùng lỗi trên toàn đội xe. |
-| Probability | Chưa đủ dữ liệu để ước lượng xác suất tái diễn; một sự kiện đã xảy ra không xác lập tỷ lệ lỗi của hệ thống. |
-| Frequency | Ghi nhận 1 vụ Tempe ngày 18/03/2018 trong case này; chưa đủ dữ liệu để xác định tần suất của cùng chuỗi lỗi. |
-| Vì sao? | NTSB tr. 1–2, 5, 13–17, 22, 57–59 xác nhận hậu quả, lỗi dự đoán, thiếu dự phòng phanh và mất tập trung. Báo cáo không cung cấp mẫu số phơi nhiễm phù hợp để tính Probability/Frequency. |
+| Scale | **1 người tử vong trong vụ Tempe**. Cấu hình tương tự có thể tạo nguy cơ trên các xe khác, nhưng chưa có số nạn nhân của cùng lỗi để ngoại suy ra toàn đội xe. |
+| Probability | **Chưa đủ dữ liệu để đánh giá xác suất tái diễn**: thiếu số lần gặp tình huống tương đương và dữ liệu phơi nhiễm. Việc tai nạn đã xảy ra không có nghĩa xác suất là 100% hoặc High. |
+| Frequency | **1 vụ được phân tích**, không phải kết luận toàn đội xe chỉ từng gặp lỗi một lần. Báo cáo không cho tần suất lặp lại cùng chuỗi lỗi; 37 sự cố đội xe thuộc nhiều loại nên không dùng làm tỷ lệ lỗi này. |
+| Vì sao? | NTSB tr. 1–2, 5, 13–17, 19–22, 57–59 xác nhận hậu quả và chuỗi mất dự phòng. **Critical** dựa trên tử vong thực tế; Scale, Probability và Frequency được đánh giá riêng, không suy ra từ Severity. [Lập luận và biện pháp kiểm soát](cases/01-uber-tempe-2018/analysis.md#8-đánh-giá-harm-map-và-điểm-can-thiệp). |
 
 ### 3. Case study 2 — [Tên case]
 
